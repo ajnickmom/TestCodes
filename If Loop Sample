@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+IF loop Sample
+    </title>
+  </head>
+  <body>
+    <div>
+      <h1>this is a blank page sample code from youtube video</h1>
+    </div>
+
+    <div>
+      <p> to view the video that was used to write this code go to:
+    <a href="https://www.youtube.com/watch?v=TPDz_84UJGw">YouTube Video</a>
+    <br>
+    <p> The goal of this script is to have the user input a number in the 'Prompt'
+      box.  The javaScript Program will then run and test the 'UserInput' in a
+      conditional loop.  Should the 'UserInput' be equal to the if statement
+      it will display the corresponding alert.</P>
+      <textarea>
+          <script type="text/javascript">
+            var userInput = Number(prompt("Please enter a number", ""));
+
+              if (userInput === 1) {
+                alert("Your number is one");
+              }
+              else if (userInput === 2) {
+                alert("Your number is two");
+              }
+              else if (userInput === 3) {
+                alert("Your number is three");
+              }
+              else if (userInput !=1 && userInput !=2 && userInput !=3) {
+                alert("Your number is not between 1 and 3");
+              }
+            </script>
+        </textarea>
+
+
+      <p>An else if is used because if one of the 'if' statements is true, none of
+      the other statements can be true.  So an else statement tells the javaScript
+      program that it does not need to continue checking the other statements. </p>
+
+      <br>
+    </div>
+
+    <script type="text/javascript">
+    var userInput = Number(prompt("Please enter a number", ""));
+
+    if (userInput === 1) {
+      alert("Your number is one");
+    }
+    else if (userInput === 2) {
+      alert("Your number is two");
+    }
+    else if (userInput === 3) {
+      alert("Your number is three");
+    }
+    else if (userInput !=1 && userInput !=2 && userInput !=3) {
+      alert("Your number is not between 1 and 3");
+    }
+
+</script>
+  </body>
+</html>
