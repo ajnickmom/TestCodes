@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Switch Statements with Strings</title>
+  </head>
+  <body>
+    <h1> conditional Statements</h1>
+    <h2>Switch Statements with Strings Example</h2>
+    <p> This is an alternative to if else statements with a string. It is better
+      to use a Switch Statement when you have nested if else Statements
+      or lots of if else statements that make understanding the code on the page
+    difficult.</p>
+<br>
+</br>
+<p>Take a note and remember that JavaScript is case sensitive. Any string that the
+  customer enters must match exactly for the Switch Statement to work correctly.
+  So if the user types in capital letter first either list it or use another script
+  to convert all the characters in the string to the same case. In the example below
+  the friut may be typed in with a plural or without and it will still be recognized
+  by the javascript.
+  </div>
+  <div>
+    <p>Expand the textarea below to see the script called
+      on this page</p>
+    <textarea>
+      <script type="text/javascript">
+var userInput = prompt("Please enter a fruit", "");
+switch (userInput) {
+  case "Oranges":
+  case "Orange":
+  case "oranges":
+  case "orange":
+    alert("Oranges are round and $0.59 a pound.");
+    break;
+  case 'Apples':
+  case 'Apple':
+  case 'apples':
+  case 'apple':
+    alert("Apples are oblong and in red, green, pink, yellow and $0.32 a pound.");
+    break;
+  case 'Bananas':
+  case 'Banana':
+  case 'bananas':
+  case 'banana':
+    alert("Bananas are long, yellow and are $0.48 a pound.");
+    break;
+  case 'Cherries':
+  case 'cherries':
+  case 'Cherry':
+  case 'cherry':
+  case 'Cherrys':
+  case 'cherrys':
+    alert("Cherries are red, like the cold weather and are $3.00 a pound.");
+    break;
+  case 'Mangoes':
+  case 'Mango':
+  case 'mangoes':
+  case 'mango':
+    alert("Mangoes are a tropical treat and $0.56 a pound.");
+    break;
+  case 'Papayas':
+  case 'Papaya':
+  case 'papayas':
+  case 'papaya':
+    alert("Cut mangoes and papayas are $2.79 a pound.");
+    break;
+  default:
+   alert("Sorry, we are out of " + userInput + ".");
+}
+prompt("Is there anything else you'd like?", "");
+</script>
+    </textarea>
+
+      <script type="text/javascript">
+var userInput = prompt("Please enter a fruit", "");
+switch (userInput) {
+  case "Oranges":
+  case "Orange":
+  case "oranges":
+  case "orange":
+    alert("Oranges are round and $0.59 a pound.");
+    break;
+  case 'Apples':
+  case 'Apple':
+  case 'apples':
+  case 'apple':
+    alert("Apples are oblong and in red, green, pink, yellow and $0.32 a pound.");
+    break;
+  case 'Bananas':
+  case 'Banana':
+  case 'bananas':
+  case 'banana':
+    alert("Bananas are long, yellow and are $0.48 a pound.");
+    break;
+  case 'Cherries':
+  case 'cherries':
+  case 'Cherry':
+  case 'cherry':
+  case 'Cherrys':
+  case 'cherrys':
+    alert("Cherries are red, like the cold weather and are $3.00 a pound.");
+    break;
+  case 'Mangoes':
+  case 'Mango':
+  case 'mangoes':
+  case 'mango':
+    alert("Mangoes are a tropical treat and $0.56 a pound.");
+    break;
+  case 'Papayas':
+  case 'Papaya':
+  case 'papayas':
+  case 'papaya':
+    alert("Cut mangoes and papayas are $2.79 a pound.");
+    break;
+  default:
+   alert("Sorry, we are out of " + userInput + ".");
+
+   /* Is there a way to make it prompt and start the Switch statement again?*/
+   prompt("Is there anything else you'd like?", "");
+}
+</script>
+</div>
+</body>
+</html>
