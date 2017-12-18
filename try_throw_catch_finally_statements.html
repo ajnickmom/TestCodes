@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Try Throw Catch Finally Error messages
+    </title>
+  </head>
+  <body>
+    <div>
+      <h1>Try Catch Throw Finally Error Messages in JavaScript</h1>
+    </div>
+
+    <div>
+      <p> to view the video that was used to write this code go to:
+    <a href="https://www.youtube.com/watch?v=79RjHaAYT-4">YouTube Video</a>
+    <p> text goes here.</P>
+      <textarea></textarea>
+
+    </div>
+    <script type = "text/javascript">
+    function divide(){
+      var numerator = Number(prompt("Please Enter a numerator"));
+      var denominator = Number(prompt("Please enter a denominator"));
+
+        try {
+          if (denominator == 0) {
+            throw {
+              error : "divide by zero error",
+              message : "denominator can not be Zero, please enter a number greater than zero",
+            }
+          }
+        }
+}
+        else {
+          document.write("result = " + (numerator/denominator));
+        }
+}
+        catch (e) {
+          document.write("error = " + e.error + "<br/>");
+          document.write("Description = " + e.description + "<br/>");
+          document.write("message = " + e.message + "<br/>");
+          document.write("Stack Trace = " + e.stack + "<br/>");
+        }
+      }
+      divide();
+</script>
+</body>
+</html>
